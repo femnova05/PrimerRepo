@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FEMNOVA</title>
+
+ <link rel="stylesheet" href="estilos8.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+
+    <div class="logo">
+        <img src="img/logo/logo.png" alt="Logo FEMNOVA">
+    </div>
+
+    <div class="frase-header">
+        <span>✦</span>
+        Descubre · Aprende · Transforma
+        <span>✦</span>
+    </div>
+
+</header>
+<nav class="menu">
+
+    <a href="index.html">Inicio</a>
+
+    <a href="nosotros.html">Nosotros</a>
+
+    <a href="historia.html">historia</a>
+
+    <a href="modulos.html">Módulos</a>
+
+    <a href="juegos.html">Juegos</a>
+
+
+</nav>
+
+<section class="hero">
+
+    <div class="texto">
+
+        <h3 class="bienvenida">Bienvenidos a</h3>
+
+        <h1>FEMNOVA</h1>
+
+        <p>
+            Donde cada experiencia se transforma en conocimiento,
+            diversión, fortaleza y apoyo.
+        </p>
+
+        <div class="separador">
+            <span></span>
+            <div class="rombo"></div>
+            <span></span>
+        </div>
+
+       <a href="acceder.html" class="boton-comenzar">
+             Comenzar
+        </a>
+
+    <div class="personaje">
+
+        <div class="halo"></div>
+
+        <img src="img/decoracion/marco.png"
+             class="marco"
+             alt="Marco floral">
+
+        <img src="img/personajes/maga.png"
+             class="maga"
+             alt="Personaje FEMNOVA">
+
+    </div>
+
+</section>
+
+
+<section class="explorar">
+
+    <h2>Explora FEMNOVA</h2>
+
+    <p>
+        Descubre un mundo de aprendizaje, juegos y crecimiento.
+    </p>
+
+    <div class="slider">
+
+        <button class="anterior">&#10094;</button>
+
+        <div class="contenedor-slider">
+
+            <img src="img/carrusel/carrusel1.jpeg" class="slide activo">
+
+            <img src="img/carrusel/carrusel2.jpeg" class="slide">
+
+            <img src="img/carrusel/carrusel3.jpeg" class="slide">
+
+            <img src="img/carrusel/carrusel4.jpeg" class="slide">
+
+        </div>
+
+        <button class="siguiente">&#10095;</button>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-adorno">
+        <span></span>
+        <div class="rombo-footer"></div>
+        <span></span>
+    </div>
+
+    <h2 class="footer-titulo">FEMNOVA</h2>
+
+    <div class="footer-separador">
+        <span></span>
+        <div class="rombo-footer"></div>
+        <span></span>
+    </div>
+
+    <p class="footer-descripcion">
+        FemNova es una plataforma educativa interactiva que busca
+        empoderar a las adolescentes a través de contenidos, juegos
+        y herramientas que promueven el respeto, la igualdad y la
+        transformación social.
+    </p>
+
+    <div class="footer-linea"></div>
+
+    <h3 class="footer-siguenos">Síguenos</h3>
+
+  
+<div class="footer-redes">
+
+    <a href="https://www.instagram.com/femnova_26/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+        Instagram
+    </a>
+
+    <a href="https://www.tiktok.com/femnova_26"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="TikTok">
+        TikTok
+    </a>
+
+</div>
+    <div class="footer-inferior">
+
+        <p>
+            Copyright ©2026
+            <span>FemNova</span>.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================
+     CHATBOY - BOTÓN FLOTANTE
+========================================= -->
+
+<button
+    class="boton-chatboy"
+    id="abrirChatboy"
+    aria-label="Abrir Chatboy">
+
+    <img
+        src="img/personajes/chatbot.png"
+        alt="Chatboy">
+
+</button>
+
+
+<!-- =========================================
+     CHATBOY - VENTANA
+========================================= -->
+
+<div
+    class="chatboy-overlay"
+    id="chatboyOverlay">
+
+    <div class="chatboy-ventana">
+
+
+        <!-- CABECERA -->
+
+        <div class="chatboy-header">
+
+            <div class="chatboy-identidad">
+
+                <div class="chatboy-icono">
+
+                    <img
+                        src="img/personajes/chatbot.png"
+                        alt="Chatboy">
+
+                </div>
+
+                <div>
+
+                    <h2>Chatboy</h2>
+
+                    <span>
+                        Estoy aquí para escucharte
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CERRAR -->
+
+            <button
+                class="cerrar-chatboy"
+                id="cerrarChatboy"
+                aria-label="Cerrar Chatboy">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             MENSAJES
+        ====================================== -->
+
+        <div
+            class="chatboy-mensajes"
+            id="chatboyMensajes">
+
+            <div class="mensaje-chatboy">
+
+                Hola 💜
+
+                <br><br>
+
+                Puedes contarme cómo te sientes.
+                Estoy aquí para escucharte.
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             ESCRIBIR
+        ====================================== -->
+
+        <div class="chatboy-escribir">
+
+            <input
+                type="text"
+                id="mensajeChatboy"
+                placeholder="Cuéntame cómo te sientes..."
+                autocomplete="off"
+            >
+
+            <button
+                id="enviarChatboy"
+                aria-label="Enviar mensaje">
+
+                ➤
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

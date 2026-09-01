@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FEMNOVA | Acceder</title>
+
+    <link
+        rel="stylesheet"
+        href="estilos8.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body class="pagina-acceso">
+
+
+    <main class="acceso-contenedor">
+
+
+        <!-- LOGO -->
+
+        <div class="acceso-logo">
+
+            <img
+                src="img/logo/logo.png"
+                alt="Logo FEMNOVA"
+            >
+
+        </div>
+
+
+
+        <!-- PANEL -->
+
+        <section class="acceso-panel">
+
+
+            <!-- =====================================
+                 INICIO DEL PANEL
+            ====================================== -->
+
+            <div
+                id="vistaBienvenida"
+                class="vista-acceso">
+
+                <span class="acceso-etiqueta">
+                    BIENVENIDA A FEMNOVA
+                </span>
+
+
+                <h1>
+                    Comienza tu recorrido
+                </h1>
+
+
+                <p>
+                    Entra a tu cuenta para continuar
+                    o crea una cuenta para comenzar
+                    tu experiencia en FEMNOVA.
+                </p>
+
+
+                <div class="acceso-botones">
+
+                    <button
+                        type="button"
+                        id="btnMostrarLogin"
+                        class="boton-acceso principal">
+
+                        Iniciar sesión
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="btnMostrarRegistro"
+                        class="boton-acceso secundario">
+
+                        Crear cuenta
+
+                    </button>
+
+                </div>
+
+
+                <a
+                    href="inicio.html"
+                    class="volver-inicio">
+
+                    ← Volver al inicio
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 INICIAR SESIÓN
+            ====================================== -->
+
+            <div
+                id="vistaLogin"
+                class="vista-acceso oculta">
+
+
+                <span class="acceso-etiqueta">
+                    BIENVENIDA DE NUEVO
+                </span>
+
+
+                <h1>
+                    Iniciar sesión
+                </h1>
+
+
+                <p>
+                    Ingresa a tu cuenta para continuar
+                    tu recorrido por FEMNOVA.
+                </p>
+
+
+                <form id="formLogin">
+
+
+                    <div class="campo-acceso">
+
+                        <label for="loginCorreo">
+                            Correo
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginCorreo"
+                            placeholder="correo@ejemplo.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="campo-acceso">
+
+                        <label for="loginClave">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="loginClave"
+                            placeholder="Tu contraseña"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="boton-formulario">
+
+                        Ingresar
+
+                    </button>
+
+                </form>
+
+
+                <p
+                    id="mensajeLogin"
+                    class="mensaje-acceso">
+                </p>
+
+
+                <button
+                    type="button"
+                    id="btnIrRegistro"
+                    class="enlace-boton">
+
+                    ¿No tienes cuenta? Crear cuenta
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="btnVolverBienvenidaLogin"
+                    class="volver-boton">
+
+                    ← Volver
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 CREAR CUENTA
+            ====================================== -->
+
+            <div
+                id="vistaRegistro"
+                class="vista-acceso oculta">
+
+
+                <span class="acceso-etiqueta">
+                    ÚNETE A FEMNOVA
+                </span>
+
+
+                <h1>
+                    Crear cuenta
+                </h1>
+
+
+                <p>
+                    Crea tu cuenta para comenzar
+                    tu experiencia en FEMNOVA.
+                </p>
+
+
+                <form id="formRegistro">
+
+
+                    <div class="campo-acceso">
+
+                        <label for="registroNombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registroNombre"
+                            placeholder="Tu nombre"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="campo-acceso">
+
+                        <label for="registroCorreo">
+                            Correo
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registroCorreo"
+                            placeholder="correo@ejemplo.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="campo-acceso">
+
+                        <label for="registroClave">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registroClave"
+                            placeholder="Crea una contraseña"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="campo-acceso">
+
+                        <label for="registroClave2">
+                            Confirmar contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registroClave2"
+                            placeholder="Repite tu contraseña"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="boton-formulario">
+
+                        Crear cuenta
+
+                    </button>
+
+                </form>
+
+
+                <p
+                    id="mensajeRegistro"
+                    class="mensaje-acceso">
+                </p>
+
+
+                <button
+                    type="button"
+                    id="btnIrLogin"
+                    class="enlace-boton">
+
+                    ¿Ya tienes cuenta? Iniciar sesión
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="btnVolverBienvenidaRegistro"
+                    class="volver-boton">
+
+                    ← Volver
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

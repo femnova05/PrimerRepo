@@ -3,12 +3,23 @@
 
 <head>
 
+<script>
+    const sesionFemnova = localStorage.getItem("sesionFemnova");
+
+    if (sesionFemnova !== "activa") {
+        alert("✦ Debes iniciar sesión para acceder a Juegos.");
+        window.location.href = "acceder.html";
+    }
+</script>
+
+<div id="inicio"></div>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>FEMNOVA | Módulos</title>
-
+<link rel="icon" type="image/png" href="img/logo/logo.png">
     <!-- CSS -->
   <link rel="stylesheet" href="estilos8.css">
     <!-- FUENTES -->
@@ -32,10 +43,7 @@
 
         <div class="logo">
 
-            <img
-                src="img/logo/logo.png"
-                alt="Logo FEMNOVA"
-            >
+              <img src="img/logo/titulo.png" alt="Logo FEMNOVA">
 
         </div>
 
@@ -133,6 +141,10 @@
             <!-- ================= MÓDULO 01 ================= -->
 
             <article class="tarjeta-modulo">
+
+                <div class="personaje-modulo">
+              <img src="img/personajes/chat2.png" alt="Personaje">
+                </div>
 
                 <div class="numero-modulo">
                     01
@@ -388,11 +400,9 @@
 
         </div>
 
-
-        <h2 class="footer-titulo">
-            FEMNOVA
-        </h2>
-
+ <div class="footer-logo">
+    <img src="img/logo/titulo.png" alt="FEMNOVA">
+</div>
 
         <div class="footer-separador">
 
@@ -464,11 +474,10 @@
     aria-label="Abrir Chatboy">
 
     <img
-        src="img/personajes/chatbot.png"
+        src="img/personajes/chat1.png"
         alt="Chatboy">
 
 </button>
-
 
 <!-- =========================================
      CHATBOY - VENTANA
@@ -575,5 +584,22 @@
 <script src="script.js"></script>
 
 </body>
+
+<div class="rivera-decoracion">
+    <img src="img/personajes/chat1.png" alt="Rivera" class="rivera-imagen" id="personajeVolador">
+</div>
+
+
+
+
+    <div class="numero-modulo">01</div>
+
+    ...
+</article>
+
+
+<a href="#inicio" class="flecha-subir" aria-label="Volver arriba">
+    ↑
+</a>
 
 </html>

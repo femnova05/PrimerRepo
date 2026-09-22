@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mito o Realidad — Identidad, diversidad de género y estereotipos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="eyebrow-top">Software educativo</div>
+  <h1 class="title display">Mito o Realidad</h1>
+  <p class="subtitle">10 afirmaciones sobre identidad, diversidad de género y estereotipos. Léelas con calma y decide.</p>
+
+  <div class="card" id="card">
+
+    <!-- Pantalla de juego -->
+    <div id="game">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <div class="eyebrow" id="questionCount">Pregunta 1 de 10</div>
+      <div class="statement display" id="statementText" aria-live="polite"></div>
+
+      <div class="actions">
+        <button class="choice-btn myth" id="btnMito" onclick="responder(true)">
+          <span class="btn-icon" id="iconMito" aria-hidden="true"></span>
+          Mito
+          <span class="sub">Es una idea falsa</span>
+        </button>
+        <button class="choice-btn reality" id="btnRealidad" onclick="responder(false)">
+          <span class="btn-icon" id="iconRealidad" aria-hidden="true"></span>
+          Realidad
+          <span class="sub">Está respaldado por evidencia</span>
+        </button>
+      </div>
+
+      <div class="feedback" id="feedback" aria-live="polite">
+        <div class="verdict" id="feedbackVerdict"></div>
+        <p id="feedbackText"></p>
+      </div>
+
+      <button class="next-btn" id="nextBtn" onclick="siguientePregunta()">Siguiente</button>
+    </div>
+
+    <!-- Pantalla de resultados -->
+    <div class="results" id="results">
+      <div class="eyebrow">Resultado</div>
+
+      <div class="score-ring" id="scoreRing">
+        <svg viewBox="0 0 120 120" width="140" height="140" aria-hidden="true">
+          <defs>
+            <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#5E2D63"/>
+              <stop offset="85%" stop-color="#C9A44C"/>
+              <stop offset="100%" stop-color="#E7C56B"/>
+            </linearGradient>
+          </defs>
+          <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" id="ringFill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="score display" id="scoreText">0/10</div>
+      </div>
+
+      <div class="score-label">afirmaciones identificadas correctamente</div>
+      <p class="message" id="resultMessage"></p>
+
+      <div class="resources">
+        <h3>Para seguir reflexionando</h3>
+        <ul>
+          <li>Habla sobre estos temas con tu familia, docentes o personas de confianza: conversarlo ayuda a comprenderlo mejor.</li>
+          <li>Observa los estereotipos presentes en la publicidad, el cine o las redes sociales que consumes a diario.</li>
+          <li>Respetar la identidad y la forma de ser de cada persona es una manera concreta de construir entornos más inclusivos.</li>
+        </ul>
+      </div>
+
+      <button class="restart-btn" onclick="reiniciarJuego()">Volver a jugar</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/juego.js"></script>
+
+</body>
+</html>

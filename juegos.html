@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
+<div id="inicio"></div>
+
+
 <head>
 
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="icon" type="image/png" href="img/logo/logo.png">
     <title>FEMNOVA | Juegos</title>
 
     <link rel="stylesheet" href="estilos8.css">
@@ -19,6 +23,14 @@
 
 </head>
 
+<script>
+    const sesionFemnova = localStorage.getItem("sesionFemnova");
+
+    if (sesionFemnova !== "activa") {
+        alert("✦ Debes iniciar sesión para acceder a Juegos.");
+        window.location.href = "acceder.html";
+    }
+</script>
 
 <body>
 
@@ -31,10 +43,7 @@
 
         <div class="logo">
 
-            <img
-                src="img/logo/logo.png"
-                alt="Logo FEMNOVA"
-            >
+              <img src="img/logo/titulo.png" alt="Logo FEMNOVA">
 
         </div>
 
@@ -129,184 +138,140 @@
         <section class="contenedor-juegos">
 
 
-            <!-- JUEGO 01 -->
+           <!-- JUEGO 01 - NIVEL 1 -->
 
-            <article class="tarjeta-juego">
+<article class="tarjeta-juego">
 
-                <div class="numero-juego">
-                    01
-                </div>
+    <div class="numero-juego">
+        01
+    </div>
 
+    <div class="imagen-juego">
 
-                <div class="imagen-juego">
+        
 
-                    <div class="juego-proximamente">
+    </div>
 
-                        <span>
-                            Próximamente
-                        </span>
+    <div class="contenido-juego">
 
-                    </div>
+        <h2>
+            Nivel 1
+        </h2>
 
-                </div>
+        <p>
+            Pon a prueba tus conocimientos
+            y supera este desafío.
+        </p>
 
+        <a href="juegosplus/Nivel 1/index.html"
+           class="boton-juego">
+            Jugar
+        </a>
 
-                <div class="contenido-juego">
+    </div>
 
-                    <h2>
-                        Juego próximamente
-                    </h2>
+</article>
 
 
-                    <p>
-                        Aquí estará disponible una experiencia
-                        interactiva de FEMNOVA.
-                    </p>
+           <!-- JUEGO 02 - NIVEL 2 -->
 
+<article class="tarjeta-juego">
 
-                    <button class="boton-juego" disabled>
-                        Próximamente
-                    </button>
+    <div class="numero-juego">
+        02
+    </div>
 
-                </div>
+    <div class="imagen-juego">
 
-            </article>
+       
+    </div>
 
+    <div class="contenido-juego">
 
+        <h2>
+            Nivel 2
+        </h2>
 
-            <!-- JUEGO 02 -->
+        <p>
+            Continúa tu aprendizaje
+            y supera el siguiente desafío.
+        </p>
 
-            <article class="tarjeta-juego">
+        <a href="juegosplus/Nivel 2/index.html"
+           class="boton-juego">
+            Jugar
+        </a>
 
-                <div class="numero-juego">
-                    02
-                </div>
+    </div>
 
+</article>
 
-                <div class="imagen-juego">
 
-                    <div class="juego-proximamente">
 
-                        <span>
-                            Próximamente
-                        </span>
+           <!-- JUEGO 03 - NIVEL 3 -->
 
-                    </div>
+<article class="tarjeta-juego">
 
-                </div>
+    <div class="numero-juego">
+        03
+    </div>
 
+    <div class="imagen-juego">
 
-                <div class="contenido-juego">
 
-                    <h2>
-                        Juego próximamente
-                    </h2>
+    </div>
 
+    <div class="contenido-juego">
 
-                    <p>
-                        Aquí estará disponible una experiencia
-                        interactiva de FEMNOVA.
-                    </p>
+        <h2>
+            Nivel 3
+        </h2>
 
+        <p>
+            Enfrenta un nuevo desafío
+            y demuestra lo aprendido.
+        </p>
 
-                    <button class="boton-juego" disabled>
-                        Próximamente
-                    </button>
+        <a href="juegosplus/Nivel 3/index.html"
+           class="boton-juego">
+            Jugar
+        </a>
 
-                </div>
+    </div>
 
-            </article>
+</article>
 
+<!-- JUEGO 04 - NIVEL 4 -->
 
+<article class="tarjeta-juego">
 
-            <!-- JUEGO 03 -->
+    <div class="numero-juego">
+        04
+    </div>
 
-            <article class="tarjeta-juego">
+    <div class="imagen-juego">
 
-                <div class="numero-juego">
-                    03
-                </div>
+    </div>
 
+    <div class="contenido-juego">
 
-                <div class="imagen-juego">
+        <h2>
+            Nivel 4
+        </h2>
 
-                    <div class="juego-proximamente">
+        <p>
+            Completa el último desafío
+            y demuestra todo lo aprendido.
+        </p>
 
-                        <span>
-                            Próximamente
-                        </span>
+        <a href="juegosplus/Nivel 4/index.html"
+           class="boton-juego">
+            Jugar
+        </a>
 
-                    </div>
+    </div>
 
-                </div>
-
-
-                <div class="contenido-juego">
-
-                    <h2>
-                        Juego próximamente
-                    </h2>
-
-
-                    <p>
-                        Aquí estará disponible una experiencia
-                        interactiva de FEMNOVA.
-                    </p>
-
-
-                    <button class="boton-juego" disabled>
-                        Próximamente
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- JUEGO 04 -->
-
-            <article class="tarjeta-juego">
-
-                <div class="numero-juego">
-                    04
-                </div>
-
-
-                <div class="imagen-juego">
-
-                    <div class="juego-proximamente">
-
-                        <span>
-                            Próximamente
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contenido-juego">
-
-                    <h2>
-                        Juego próximamente
-                    </h2>
-
-
-                    <p>
-                        Aquí estará disponible una experiencia
-                        interactiva de FEMNOVA.
-                    </p>
-
-
-                    <button class="boton-juego" disabled>
-                        Próximamente
-                    </button>
-
-                </div>
-
-            </article>
-
+</article>
 
 
         </section>
@@ -332,11 +297,9 @@
 
         </div>
 
-
-        <h2 class="footer-titulo">
-            FEMNOVA
-        </h2>
-
+ <div class="footer-logo">
+    <img src="img/logo/titulo.png" alt="FEMNOVA">
+</div>
 
         <div class="footer-separador">
 
@@ -407,7 +370,7 @@
     aria-label="Abrir Chatboy">
 
     <img
-        src="img/personajes/chatbot.png"
+        src="img/personajes/chat1.png"
         alt="Chatboy">
 
 </button>
@@ -527,5 +490,18 @@
 <script src="script.js"></script>
 
 </body>
+
+<div class="rivera-decoracion">
+    <img src="img/personajes/chat1.png" alt="Rivera" class="rivera-imagen" id="personajeVolador">
+</div>
+
+
+
+</article>
+
+
+<a href="#inicio" class="flecha-subir" aria-label="Volver arriba">
+    ↑
+</a>
 
 </html>

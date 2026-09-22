@@ -2,13 +2,18 @@
 <html lang="es">
 
 <head>
+
+
+<div id="inicio"></div>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>FEMNOVA | Historia</title>
 
     <link rel="stylesheet" href="estilos8.css">
-
+<link rel="icon" type="image/png" href="img/logo/logo.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"
@@ -20,7 +25,7 @@
 <header>
 
     <div class="logo">
-        <img src="img/logo/logo.png" alt="Logo FEMNOVA">
+          <img src="img/logo/titulo.png" alt="Logo FEMNOVA">
     </div>
 
     <div class="frase-header">
@@ -43,6 +48,8 @@
 </nav>
 
 <main class="historia-pagina">
+
+
 
     <!-- ==================================================
          TÍTULO
@@ -164,14 +171,16 @@
             <div class="personaje-figura personaje-rivera">
 
                 <div class="halo-personaje"></div>
-
-                <img
+                 
+   <img
                     src="img/personajes/chatbot.png"
                     alt="Rivera"
                 >
-
+                
                 <div class="placa-personaje">
 
+
+                    
                     <h3>
                         RIVERA ✦
                     </h3>
@@ -203,6 +212,8 @@
                             class="texto-carrusel"
                             id="textoRivera"
                         >
+
+                     
 
                             <div class="texto-frase activa">
                                 <span>Hola,</span>
@@ -487,9 +498,9 @@
         <span></span>
     </div>
 
-    <h2 class="footer-titulo">
-        FEMNOVA
-    </h2>
+    <div class="footer-logo">
+    <img src="img/logo/titulo.png" alt="FEMNOVA">
+</div>
 
     <div class="footer-separador">
         <span></span>
@@ -543,5 +554,130 @@
 
 <script src="script.js"></script>
 
+
+<!-- =========================================
+     CHATBOY - BOTÓN FLOTANTE
+========================================= -->
+
+<button
+    class="boton-chatboy"
+    id="abrirChatboy"
+    aria-label="Abrir Chatboy">
+
+    <img
+        src="img/personajes/chat1.png"
+        alt="Chatboy">
+
+</button>
+<!-- =========================================
+     CHATBOY - VENTANA
+========================================= -->
+
+<div
+    class="chatboy-overlay"
+    id="chatboyOverlay">
+
+    <div class="chatboy-ventana">
+
+
+        <!-- CABECERA -->
+
+        <div class="chatboy-header">
+
+            <div class="chatboy-identidad">
+
+                <div class="chatboy-icono">
+
+                    <img
+                        src="img/personajes/chatbot.png"
+                        alt="Chatboy">
+
+                </div>
+
+                <div>
+
+                    <h2>Chatboy</h2>
+
+                    <span>
+                        Estoy aquí para escucharte
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CERRAR -->
+
+            <button
+                class="cerrar-chatboy"
+                id="cerrarChatboy"
+                aria-label="Cerrar Chatboy">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <!-- =====================================
+             MENSAJES
+        ====================================== -->
+
+        <div
+            class="chatboy-mensajes"
+            id="chatboyMensajes">
+
+            <div class="mensaje-chatboy">
+
+                Hola 💜
+
+                <br><br>
+
+                Puedes contarme cómo te sientes.
+                Estoy aquí para escucharte.
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             ESCRIBIR
+        ====================================== -->
+
+        <div class="chatboy-escribir">
+
+            <input
+                type="text"
+                id="mensajeChatboy"
+                placeholder="Cuéntame cómo te sientes..."
+                autocomplete="off"
+            >
+
+            <button
+                id="enviarChatboy"
+                aria-label="Enviar mensaje">
+
+                ➤
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+
+
+<a href="#inicio" class="flecha-subir" aria-label="Volver arriba">
+    ↑
+</a>
+
 </html>
